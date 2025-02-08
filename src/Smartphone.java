@@ -1,11 +1,10 @@
-public class Smarphone extends Prodotto{
+public class Smartphone extends Prodotto{
     private int codiceImei;
     private int memoria;
 
-    public Smarphone(){
+    public Smartphone(){
 
     }
-
     public int getCodiceImei() {
         return codiceImei;
     }
@@ -20,5 +19,13 @@ public class Smarphone extends Prodotto{
 
     public void setMemoria(int memoria) {
         this.memoria = memoria;
+    }
+
+    @Override
+    public String toString() {
+        return "Smartphone{" +
+                "codiceImei=" + codiceImei +
+                ", memoria=" + memoria +
+                "} " + super.toString();
     }
 }
